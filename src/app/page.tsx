@@ -1,9 +1,9 @@
+import ParticlesBackground from "@/components/ParticlesBackground";
+
 export default function Home() {
-  return (
-    <>
-      <h1>
-        Github Desktop
-      </h1>
-    </>
-  )
+    return (
+        <>
+            <ParticlesBackground/>
+        </>
+    );
 }
