@@ -1,12 +1,11 @@
-
-import { Header } from '../components/header';
 import { Features } from '../components/features';
+import Header from "@/components/landing/header";
 
 export default function Home() {
   return (
     <>
       <Header />
-      <Features />
+      < Features />
     </>
   );
 }
