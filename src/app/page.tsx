@@ -1,9 +1,12 @@
+
+import { Header } from '../components/header';
+import { Features } from '../components/features';
+
 export default function Home() {
   return (
     <>
-      <h1>
-        Myra
-      </h1>
+      <Header />
+      <Features />
     </>
-  )
+  );
 }
