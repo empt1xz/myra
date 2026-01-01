@@ -1,9 +1,13 @@
+import { Features } from '../components/features';
+import Header from "@/components/landing/header";
+import ParticlesBackground from "@/components/ParticlesBackground";
+
 export default function Home() {
   return (
     <>
-      <h1>
-        Myra
-      </h1>
+      <Header />
+      <Features />
+      <ParticlesBackground />
     </>
-  )
+  );
 }
