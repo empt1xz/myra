@@ -1,9 +1,9 @@
+import Header from "@/components/landing/header";
+
 export default function Home() {
   return (
     <>
-      <h1>
-        Myra
-      </h1>
+      <Header/>
     </>
   )
 }
