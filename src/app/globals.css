@@ -1,4 +1,6 @@
+
 @import "tailwindcss";
+@import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -77,6 +79,23 @@
   --sidebar-border: oklch(0.92 0.004 286.32);
   --sidebar-ring: oklch(0.705 0.015 286.067);
 }
+body {
+    height: 100vh;
+    background: 
+    
+    linear-gradient( #00ff0009 1px, transparent 1px),
+    linear-gradient( 90deg, #00ff0009 1px, transparent 1px),
+    
+    
+    radial-gradient(
+        circle at center,
+        #002900 0%,
+        #002200 30%,
+        black 70%
+    );
+
+    background-size: 48px 48px, 48px 48px, 100% 100%
+    }
 
 .dark {
   --background: oklch(0.141 0.005 285.823);
@@ -111,6 +130,7 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.552 0.016 285.938);
 }
+  
 
 @layer base {
   * {
@@ -122,22 +142,3 @@
 }
 
 
-
-body {
-    height: 100vh;
-    background: 
-    
-    linear-gradient( #00ff0009 1px, transparent 1px),
-    linear-gradient( 90deg, #00ff0009 1px, transparent 1px),
-    
-    
-    radial-gradient(
-        circle at center,
-        #002900 0%,
-        #002200 30%,
-        black 70%
-    );
-
-    background-size: 48px 48px, 48px 48px, 100% 100%
-
-}
