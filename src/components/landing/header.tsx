@@ -68,6 +68,7 @@ export default function Header() {
             onClick={() => {
               setTheme(theme === "dark" ? "light" : "dark");
             }}
+            suppressHydrationWarning
           >
             {theme === "dark" ? <Moon /> : <Sun />}
           </Button>
