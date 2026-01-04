@@ -44,7 +44,7 @@ export function Hero() {
                 className="text-lg px-8"
                 asChild
               >
-                <a href="#comandos">Comandos</a>
+                <a href="#comandos">Documentação</a>
               </Button>
             </div>
 
