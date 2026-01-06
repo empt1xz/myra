@@ -21,37 +21,37 @@ export default function Header() {
 
   return (
     <>
-      <header className="flex top-0 sticky h-20 items-center justify-around w-full bg-white dark:bg-[#121212] text-gray-900 dark:text-white border-b border-gray-200 dark:border-transparent z-20">
-        <Link href="/" className="flex flex-row items-center space-x-4">
-          <Avatar className="border border-green-600 border-4 w-15 h-15">
+      <header className="flex top-0 sticky h-20 items-center justify-between px-4 md:px-8 w-full bg-white dark:bg-[#121212] text-gray-900 dark:text-white border-b border-gray-200 dark:border-transparent z-20">
+        <Link href="/" className="flex flex-row items-center space-x-2 md:space-x-4">
+          <Avatar className="border-2 md:border-4 border-green-600 w-10 h-10 md:w-12 md:h-12">
             <AvatarImage src={"image.png"} />
 
             <AvatarFallback> M </AvatarFallback>
           </Avatar>
 
-          <h1 className="text-3xl font-bold text-gray-900 dark:text-white">Myra Bot</h1>
+          <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white">Myra Bot</h1>
         </Link>
 
-        <div className="flex flex-row items-center space-x-8">
+        <div className="flex flex-row items-center space-x-2 md:space-x-4 lg:space-x-8">
           <nav>
-            <ul className="hidden md:flex flex-row space-x-4">
+            <ul className="hidden lg:flex flex-row space-x-4">
               <li>
-                <Link href="/" className={Transition.hoverlink}>
+                <Link href="/" className="text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors duration-300 font-medium">
                   Features
                 </Link>
               </li>
               <li>
-                <Link className={Transition.hoverlink} href="/">
+                <Link href="/" className="text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors duration-300 font-medium">
                   Docs
                 </Link>
               </li>
               <li>
-                <Link className={Transition.hoverlink} href="/">
+                <Link href="/" className="text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors duration-300 font-medium">
                   Sobre a Myra
                 </Link>
               </li>
               <li>
-                <Link className={Transition.hoverlink} href="/">
+                <Link href="/" className="text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors duration-300 font-medium">
                   Team
                 </Link>
               </li>
@@ -63,10 +63,10 @@ export default function Header() {
                 "https://discord.com/oauth2/authorize?client_id=1455017163353096276&permissions=8&integration_type=0&scope=bot"
               )
             }
-            className="font-bold hover:cursor-pointer bg-blue-600 hover:bg-blue-700 text-white"
+            className="hidden md:flex font-bold hover:cursor-pointer bg-blue-600 hover:bg-blue-700 text-white text-sm md:text-base"
           >
             <FaDiscord />
-            Me adicione
+            <span className="ml-2">Me adicione</span>
           </Button>
           <Button
             variant={"ghost"}
@@ -74,6 +74,7 @@ export default function Header() {
               setTheme(theme === "dark" ? "light" : "dark");
             }}
             suppressHydrationWarning
+            className="p-2"
           >
             {!mounted ? (
               <Sun className="w-5 h-5" />
@@ -83,7 +84,7 @@ export default function Header() {
               <Sun className="w-5 h-5" />
             )}
           </Button>
-          <Button onClick={() => setMenu(!menu)} variant={"ghost"}>
+          <Button onClick={() => setMenu(!menu)} variant={"ghost"} className="lg:hidden p-2">
             {menu === true ? <X /> : <Menu />}
           </Button>
         </div>

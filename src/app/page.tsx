@@ -3,6 +3,7 @@ import { Features } from "@/components/features";
 import ParticlesBackground from "@/components/ParticlesBackground";
 import { Footer } from "@/components/footer";
 import { Hero } from "@/components/hero";
+import { CTA } from "@/components/cta";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Header />
       <Hero />
       <Features />
+      <CTA />
       <ParticlesBackground />
       <Footer />
     </>
