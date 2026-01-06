@@ -10,15 +10,14 @@ export function Hero() {
       id="inicio"
       className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16"
     >
-      <ParticlesBackground />
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-                Conheça a{' '}
-                <span className="text-primary bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
+                Descubra a{' '}
+                <span className="bg-gradient-to-r from-emerald-400 via-green-500 to-emerald-600 bg-clip-text text-transparent font-extrabold">
                   Myra
                 </span>
               </h1>
@@ -29,7 +28,7 @@ export function Hero() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="text-lg px-8" asChild>
+              <Button size="lg" className="text-lg px-8 bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white border-0" asChild>
                 <a
                   href="LINK OAUTH"
                   target="_blank"
@@ -86,7 +85,7 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-background via-background/80 to-transparent" />
     </section>
   );
 }
