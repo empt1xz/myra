@@ -14,7 +14,7 @@ export function Hero() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8">
+          <div className="space-y-8 order-2 lg:order-1">
             <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-gray-900 dark:text-white">
                 Descubra a{' '}
@@ -73,8 +73,8 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="relative flex items-center justify-center -mt-12">
-            <div className="relative w-full max-w-md">
+          <div className="relative flex items-center justify-center -mt-12 order-1 lg:order-2">
+            <div className="relative w-full max-w-xs md:max-w-sm lg:max-w-md">
               <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl animate-pulse" />
               <img
                 src="/image.png"
