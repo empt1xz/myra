@@ -6,13 +6,18 @@ import Transition from "./transition.module.css";
 import Image from "next/image";
 import { Button } from "../ui/button";
 import { FaDiscord } from "react-icons/fa6";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X, Sun, Moon } from "lucide-react";
 import { useTheme } from "next-themes";
 
 export default function Header() {
   const [menu, setMenu] = useState(false);
   const { theme, systemTheme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   return (
     <>
@@ -70,7 +75,13 @@ export default function Header() {
             }}
             suppressHydrationWarning
           >
-            {theme === "dark" ? <Moon /> : <Sun />}
+            {!mounted ? (
+              <Sun className="w-5 h-5" />
+            ) : theme === "dark" ? (
+              <Moon className="w-5 h-5" />
+            ) : (
+              <Sun className="w-5 h-5" />
+            )}
           </Button>
           <Button onClick={() => setMenu(!menu)} variant={"ghost"}>
             {menu === true ? <X /> : <Menu />}
