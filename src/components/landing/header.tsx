@@ -16,7 +16,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="flex top-0 sticky h-20 items-center justify-around w-full bg-[#121212] text-white z-20">
+      <header className="flex top-0 sticky h-20 items-center justify-around w-full bg-white dark:bg-[#121212] text-gray-900 dark:text-white border-b border-gray-200 dark:border-transparent z-20">
         <Link href="/" className="flex flex-row items-center space-x-4">
           <Avatar className="border border-green-600 border-4 w-15 h-15">
             <AvatarImage src={"image.png"} />
@@ -24,7 +24,7 @@ export default function Header() {
             <AvatarFallback> M </AvatarFallback>
           </Avatar>
 
-          <h1 className="text-3xl font-bold">Myra Bot</h1>
+          <h1 className="text-3xl font-bold text-gray-900 dark:text-white">Myra Bot</h1>
         </Link>
 
         <div className="flex flex-row items-center space-x-8">
@@ -68,6 +68,7 @@ export default function Header() {
             onClick={() => {
               setTheme(theme === "dark" ? "light" : "dark");
             }}
+            suppressHydrationWarning
           >
             {theme === "dark" ? <Moon /> : <Sun />}
           </Button>
