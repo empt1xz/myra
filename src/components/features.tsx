@@ -27,9 +27,9 @@ export function Features() {
     },
     {
       icon: Brain,
-      title: '',
+      title: 'Automação',
       description:
-        '',
+        'Tarefas automatizadas, respostas inteligentes e gestão eficiente para facilitar a administração do seu servidor.',
       badge: null,
     }
   ];
