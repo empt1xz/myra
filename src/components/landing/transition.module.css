@@ -1,0 +1,6 @@
+.hoverlink {
+    transition: 0.2s;
+}
+.hoverlink:hover {
+    color: #00ff00;
+}
