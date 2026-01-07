@@ -6,7 +6,7 @@ import { Instagram, HelpCircle } from 'lucide-react';
 
 export function Footer() {
   return (
-    <footer className="relative bg-white dark:bg-black/60 backdrop-blur-sm border-t border-gray-200 dark:border-emerald-500/20 mt-24">
+    <footer className="relative bg-white dark:bg-black/60 backdrop-blur-sm border-t border-gray-200 dark:border-emerald-500/20">
       <div className="container mx-auto px-4 py-12">
         {/* Grid de 4 colunas */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
