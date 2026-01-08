@@ -8,7 +8,7 @@ export function Hero() {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 bg-white dark:bg-transparent"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 "
     >
       <ParticlesBackground />
 
@@ -86,7 +86,6 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-background via-background/80 to-transparent" />
     </section>
   );
 }
