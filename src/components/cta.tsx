@@ -6,17 +6,11 @@ export function CTA() {
   return (
     <section className="relative mt-24 md:mt-32 py-24 md:py-32 overflow-hidden">
       {/* Background com gradiente e padrão de grid */}
-      <div className="absolute inset-0 bg-gradient-to-br from-emerald-50 via-green-50 to-emerald-100 dark:from-emerald-950 dark:via-green-900 dark:to-black">
+      <div className="absolute inset-0">
         {/* Padrão de grid sutil */}
         <div 
           className="absolute inset-0 opacity-10 dark:opacity-30"
-          style={{
-            backgroundImage: `
-              linear-gradient(rgba(16, 185, 129, 0.15) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(16, 185, 129, 0.15) 1px, transparent 1px)
-            `,
-            backgroundSize: '40px 40px'
-          }}
+
         />
         {/* Overlay de gradiente para suavizar */}
         <div className="absolute inset-0 bg-gradient-to-t from-white/30 via-transparent to-transparent dark:from-black/50" />

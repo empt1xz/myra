@@ -79,23 +79,46 @@
   --sidebar-border: oklch(0.92 0.004 286.32);
   --sidebar-ring: oklch(0.705 0.015 286.067);
 }
+
+@layer base {
+  body,
+  .card,
+  .popover,
+  .sidebar {
+    transition:
+      background-color 0.5s ease,
+      color 0.5s ease,
+      border-color 0.5s ease;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground overflow-x-hidden;
+    transition: 
+      background-color 0.5s ease,
+      color 0.5s ease;
+  }
+}
+
+* {
+  transition: all 0.5s;
+}
 body {
+    @apply bg-background text-foreground overflow-x-hidden;
     min-height: 100vh;
+    
+    transition: 
+      background-color 0.5s ease,
+      color 0.5s ease;
     background: 
     
     linear-gradient( #00ff0009 1px, transparent 1px),
-    linear-gradient( 90deg, #00ff0009 1px, transparent 1px),
-    
-    
-    radial-gradient(
-        circle at center,
-        #002900 0%,
-        #002200 30%,
-        black 70%
-    );
-
-    background-size: 48px 48px, 48px 48px, 100% 100%;
-    background-attachment: fixed;
+    linear-gradient( 90deg, #00ff0009 1px, transparent 1px)
     }
 
 .dark {

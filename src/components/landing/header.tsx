@@ -12,8 +12,14 @@ import { useTheme } from "next-themes";
 
 export default function Header() {
   const [menu, setMenu] = useState(false);
-  const { theme, systemTheme, setTheme } = useTheme();
+  const { theme, setTheme, systemTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+
+    const activeTheme = theme === "system" ? systemTheme : theme
+
+      function Toggle () {
+          setTheme(activeTheme === "dark"?  "light" : "dark")
+      }
 
   useEffect(() => {
     setMounted(true);
