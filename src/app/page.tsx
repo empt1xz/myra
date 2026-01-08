@@ -9,12 +9,12 @@ import { Roadmap } from "@/components/roadmap";
 export default function Home() {
   return (
     <>
+    <ParticlesBackground/>
       <Header />
       <Hero />
       <Features />
       <Roadmap />
       <CTA />
-      <ParticlesBackground />
       <Footer />
     </>
   )

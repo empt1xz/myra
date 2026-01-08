@@ -50,7 +50,7 @@ const teamMembers: TeamMember[] = [
   {
     id: '1083428777809432606', 
     role: 'Chefe de Desenvolvimento',
-    description: 'Responsável pelo desenvolvimento principal',
+    description: 'Desenvolvedor FullStack',
     category: 'leadership',
     link: 'https://discord.com/users/1083428777809432606',
   },
@@ -74,14 +74,7 @@ const teamMembers: TeamMember[] = [
     description: 'Desenvolvedor',
     category: 'developers',
     link: 'https://gabriellucasafb.com.br',
-  },
-  {
-    id: '1435358972407451690',
-    role: 'Desenvolvedor',
-    description: 'Desenvolvedor',
-    category: 'developers',
-    link: 'https://discord.com/users/1435358972407451690',
-  },
+  }
 ];
 
 export function Team() {
