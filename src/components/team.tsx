@@ -28,6 +28,7 @@ interface TeamMember {
   role: string;
   description: string;
   category: 'leadership' | 'developers';
+  link?: string;
 }
 
 const teamMembers: TeamMember[] = [
@@ -36,42 +37,49 @@ const teamMembers: TeamMember[] = [
     role: 'Criador',
     description: 'Criador da Myra',
     category: 'leadership',
+    link: 'https://discord.com/users/1240817297266966572',
   },
   {
     id: '1294100164503535669', 
     role: 'Administrador Chefe',
     description: 'Administrador Geral',
     category: 'leadership',
+    link: 'https://discord.com/users/1294100164503535669',
   },
   {
     id: '1083428777809432606', 
     role: 'Chefe de Desenvolvimento',
     description: 'Responsável pelo desenvolvimento principal',
     category: 'leadership',
+    link: 'https://discord.com/users/1083428777809432606',
   },
   {
     id: '1397324532565672118',
     role: 'Desenvolvedor',
     description: 'Desenvolvedor',
     category: 'developers',
+    link: 'https://discord.com/users/1397324532565672118',
   },
   {
     id: '997210441505841234',
     role: 'Desenvolvedor',
     description: 'Desenvolvedor',
     category: 'developers',
+    link: 'https://discord.com/users/997210441505841234',
   },
   {
     id: '310255208758509570',
     role: 'Desenvolvedor',
     description: 'Desenvolvedor',
     category: 'developers',
+    link: 'https://gabriellucasafb.com.br',
   },
   {
     id: '1435358972407451690',
     role: 'Desenvolvedor',
     description: 'Desenvolvedor',
     category: 'developers',
+    link: 'https://discord.com/users/1435358972407451690',
   },
 ];
 
@@ -160,7 +168,8 @@ export function Team() {
               return (
                 <Card
                   key={member.id}
-                  className="group hover:shadow-xl hover:shadow-emerald-500/20 transition-all duration-300 hover:scale-105 border-2 border-emerald-500/30 dark:border-emerald-500/20 hover:border-emerald-500/60 dark:hover:border-emerald-500/50 bg-white dark:bg-black/40"
+                  onClick={() => member.link && window.open(member.link, '_blank')}
+                  className={`group hover:shadow-xl hover:shadow-emerald-500/20 transition-all duration-300 hover:scale-105 border-2 border-emerald-500/30 dark:border-emerald-500/20 hover:border-emerald-500/60 dark:hover:border-emerald-500/50 bg-white dark:bg-black/40 ${member.link ? 'cursor-pointer' : ''}`}
                 >
                   <CardContent className="pt-5 text-center space-y-3">
                     <div className="relative inline-block">
@@ -217,7 +226,8 @@ export function Team() {
                 return (
                   <Card
                     key={member.id}
-                    className="group hover:shadow-xl hover:shadow-emerald-500/20 transition-all duration-300 hover:scale-105 border-2 border-emerald-500/30 dark:border-emerald-500/20 hover:border-emerald-500/60 dark:hover:border-emerald-500/50 bg-white dark:bg-black/40"
+                    onClick={() => member.link && window.open(member.link, '_blank')}
+                    className={`group hover:shadow-xl hover:shadow-emerald-500/20 transition-all duration-300 hover:scale-105 border-2 border-emerald-500/30 dark:border-emerald-500/20 hover:border-emerald-500/60 dark:hover:border-emerald-500/50 bg-white dark:bg-black/40 ${member.link ? 'cursor-pointer' : ''}`}
                   >
                     <CardContent className="pt-5 text-center space-y-3">
                       <div className="relative inline-block">
