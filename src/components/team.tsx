@@ -5,6 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Badge } from '@/components/ui/badge';
 import { Users } from 'lucide-react';
+import ParticlesBackground from './ParticlesBackground';
 
 interface LanyardData {
   discord_user: {
@@ -139,8 +140,9 @@ export function Team() {
   };
 
   return (
-    <section id="team" className="py-16 bg-gray-50 dark:bg-background min-h-screen pt-24">
-      <div className="container mx-auto px-4">
+    <section id="team" className="py-16 min-h-screen pt-24 relative overflow-hidden">
+      <ParticlesBackground />
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center space-y-3 mb-12">
           <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-emerald-100 dark:bg-emerald-500/20 mb-2">
             <Users className="w-6 h-6 text-emerald-600 dark:text-emerald-400" />
