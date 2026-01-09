@@ -6,7 +6,7 @@ import { Instagram, HelpCircle } from 'lucide-react';
 
 export function Footer() {
   return (
-    <footer className="relative bg-white dark:bg-black/60 backdrop-blur-sm border-t border-gray-200 dark:border-emerald-500/20">
+    <footer className="relative bg-white dark:bg-black/60 backdrop-blur-sm border-t border-emerald-200 dark:border-emerald-500/20">
       <div className="container mx-auto px-4 py-12">
         {/* Grid de 4 colunas */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
@@ -22,10 +22,10 @@ export function Footer() {
                 </Avatar>
               </Link>
               <Link href="#inicio" className="cursor-pointer hover:opacity-80 transition-opacity">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-emerald-50">Myra Bot</h3>
+                <h3 className="text-xl font-bold text-emerald-700 dark:text-emerald-50">Myra Bot</h3>
               </Link>
             </div>
-            <p className="text-sm text-gray-600 dark:text-emerald-200/70 leading-relaxed max-w-xs">
+            <p className="text-sm text-emerald-700/80 dark:text-emerald-200/70 leading-relaxed max-w-xs">
               Myra Bot é uma assistente virtual com IA avançada desenvolvida pela Myra Team para automatizar e evoluir servidores Discord.
             </p>
             <div className="flex items-center space-x-4 pt-2">
@@ -33,7 +33,7 @@ export function Footer() {
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-700 hover:text-emerald-600 dark:text-emerald-200/70 dark:hover:text-emerald-400 transition-colors duration-300"
+                className="text-emerald-700 hover:text-emerald-600 dark:text-emerald-200/70 dark:hover:text-emerald-400 transition-colors duration-300"
                 aria-label="Discord"
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -45,12 +45,12 @@ export function Footer() {
 
           {/* Coluna 2 - Navegação */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-gray-900 dark:text-emerald-50 mb-4">Navegação</h4>
+            <h4 className="text-lg font-semibold text-emerald-700 dark:text-emerald-50 mb-4">Navegação</h4>
             <ul className="space-y-3">
               <li>
                 <Link
                   href="#features"
-                  className="text-sm text-gray-700 hover:text-emerald-600 dark:text-emerald-200/70 dark:hover:text-emerald-400 transition-colors duration-300"
+                  className="text-sm text-emerald-700 hover:text-emerald-600 dark:text-emerald-200/70 dark:hover:text-emerald-400 transition-colors duration-300"
                 >
                   Features
                 </Link>
@@ -58,15 +58,15 @@ export function Footer() {
               <li>
                 <Link
                   href="#comandos"
-                  className="text-sm text-gray-700 hover:text-emerald-600 dark:text-emerald-200/70 dark:hover:text-emerald-400 transition-colors duration-300"
+                  className="text-sm text-emerald-700 hover:text-emerald-600 dark:text-emerald-200/70 dark:hover:text-emerald-400 transition-colors duration-300"
                 >
-                  Docs
+                  Documentação
                 </Link>
               </li>
               <li>
                 <Link
                   href="#sobre"
-                  className="text-sm text-gray-700 hover:text-emerald-600 dark:text-emerald-200/70 dark:hover:text-emerald-400 transition-colors duration-300"
+                  className="text-sm text-emerald-700 hover:text-emerald-600 dark:text-emerald-200/70 dark:hover:text-emerald-400 transition-colors duration-300"
                 >
                   Sobre
                 </Link>
@@ -76,14 +76,14 @@ export function Footer() {
 
           {/* Coluna 3 - Suporte */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-gray-900 dark:text-emerald-50 mb-4">Suporte</h4>
+            <h4 className="text-lg font-semibold text-emerald-700 dark:text-emerald-50 mb-4">Suporte</h4>
             <ul className="space-y-3">
               <li>
                 <a
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-gray-700 hover:text-emerald-600 dark:text-emerald-200/70 dark:hover:text-emerald-400 transition-colors duration-300"
+                  className="text-sm text-emerald-700 hover:text-emerald-600 dark:text-emerald-200/70 dark:hover:text-emerald-400 transition-colors duration-300"
                 >
                   Servidor de Suporte
                 </a>
@@ -93,7 +93,7 @@ export function Footer() {
                   href="https://discord.gg/4ATaxCcwvUH"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-gray-700 hover:text-emerald-600 dark:text-emerald-200/70 dark:hover:text-emerald-400 transition-colors duration-300"
+                  className="text-sm text-emerald-700 hover:text-emerald-600 dark:text-emerald-200/70 dark:hover:text-emerald-400 transition-colors duration-300"
                 >
                   Adicionar ao Discord
                 </a>
@@ -101,7 +101,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#termos"
-                  className="text-sm text-gray-700 hover:text-emerald-600 dark:text-emerald-200/70 dark:hover:text-emerald-400 transition-colors duration-300"
+                  className="text-sm text-emerald-700 hover:text-emerald-600 dark:text-emerald-200/70 dark:hover:text-emerald-400 transition-colors duration-300"
                 >
                   Termos de Serviço
                 </Link>
@@ -109,7 +109,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#privacidade"
-                  className="text-sm text-gray-700 hover:text-emerald-600 dark:text-emerald-200/70 dark:hover:text-emerald-400 transition-colors duration-300"
+                  className="text-sm text-emerald-700 hover:text-emerald-600 dark:text-emerald-200/70 dark:hover:text-emerald-400 transition-colors duration-300"
                 >
                   Política de Privacidade
                 </Link>
@@ -119,7 +119,7 @@ export function Footer() {
 
           {/* Coluna 4 - FAQ Rápido */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-gray-900 dark:text-emerald-50 mb-4 flex items-center">
+            <h4 className="text-lg font-semibold text-emerald-700 dark:text-emerald-50 mb-4 flex items-center">
               <HelpCircle className="w-5 h-5 mr-2 text-emerald-600 dark:text-emerald-400" />
               FAQ Rápido
             </h4>
@@ -127,7 +127,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#configurar"
-                  className="text-sm text-gray-700 hover:text-emerald-600 dark:text-emerald-200/70 dark:hover:text-emerald-400 transition-colors duration-300"
+                  className="text-sm text-emerald-700 hover:text-emerald-600 dark:text-emerald-200/70 dark:hover:text-emerald-400 transition-colors duration-300"
                 >
                   Como configurar o Myra Bot?
                 </Link>
@@ -135,7 +135,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#premium"
-                  className="text-sm text-gray-700 hover:text-emerald-600 dark:text-emerald-200/70 dark:hover:text-emerald-400 transition-colors duration-300"
+                  className="text-sm text-emerald-700 hover:text-emerald-600 dark:text-emerald-200/70 dark:hover:text-emerald-400 transition-colors duration-300"
                 >
                   Quais são os benefícios Premium?
                 </Link>
@@ -143,7 +143,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#ia"
-                  className="text-sm text-gray-700 hover:text-emerald-600 dark:text-emerald-200/70 dark:hover:text-emerald-400 transition-colors duration-300"
+                  className="text-sm text-emerald-700 hover:text-emerald-600 dark:text-emerald-200/70 dark:hover:text-emerald-400 transition-colors duration-300"
                 >
                   Como usar os comandos de IA?
                 </Link>
@@ -151,7 +151,7 @@ export function Footer() {
               <li>
                 <a
                   href="#"
-                  className="text-sm text-gray-700 hover:text-emerald-600 dark:text-emerald-200/70 dark:hover:text-emerald-400 transition-colors duration-300"
+                  className="text-sm text-emerald-700 hover:text-emerald-600 dark:text-emerald-200/70 dark:hover:text-emerald-400 transition-colors duration-300"
                 >
                   Preciso de ajuda personalizada
                 </a>
@@ -161,10 +161,22 @@ export function Footer() {
         </div>
 
         {/* Rodapé inferior */}
-        <div className="border-t border-gray-200 dark:border-emerald-500/20 pt-8 mt-8">
-          <p className="text-center text-sm text-gray-500 dark:text-emerald-200/60">
-            © 2026 Myra Team · Todos os direitos reservados.
-          </p>
+        <div className="border-t border-emerald-200 dark:border-emerald-500/20 pt-8 mt-8">
+          <div className="flex flex-col items-center gap-2">
+            <p className="text-center text-sm text-emerald-700/80 dark:text-emerald-200/60">
+              © 2026 Myra Team · Todos os direitos reservados.
+            </p>
+            <p className="text-center text-sm">
+              <a
+                href="https://discord.com/invite/clube-meia-noite-1186063021051748352"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-emerald-700/80 dark:text-emerald-200/60 hover:text-green-800 dark:hover:text-green-400 transition-colors duration-300"
+              >
+                Powered by Rede Meia Noite
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
