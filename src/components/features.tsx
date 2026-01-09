@@ -35,7 +35,7 @@ export function Features() {
   ];
 
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section id='features' className="py-24 relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-emerald-50">

@@ -41,21 +41,13 @@ export default function Header() {
         <div className="flex flex-row items-center space-x-2 md:space-x-4 lg:space-x-8">
           <nav>
             <ul className="hidden lg:flex flex-row space-x-4">
+              
               <li>
-                <Link href="/" className="text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors duration-300 font-medium">
-                  Features
-                </Link>
-              </li>
-              <li>
-                <Link href="/" className="text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors duration-300 font-medium">
+                <Link href="" className="text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors duration-300 font-medium">
                   Docs
                 </Link>
               </li>
-              <li>
-                <Link href="/" className="text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors duration-300 font-medium">
-                  Sobre a Myra
-                </Link>
-              </li>
+            
               <li>
                 <Link href="/team" className="text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors duration-300 font-medium">
                   Team
@@ -74,21 +66,12 @@ export default function Header() {
             <FaDiscord />
             <span className="ml-2">Me adicione</span>
           </Button>
-          <Button
+          <Button suppressHydrationWarning
             variant={"ghost"}
-            onClick={() => {
-              setTheme(theme === "dark" ? "light" : "dark");
-            }}
-            suppressHydrationWarning
-            className="p-2"
+            onClick={Toggle}
           >
-            {!mounted ? (
-              <Sun className="w-5 h-5" />
-            ) : theme === "dark" ? (
-              <Moon className="w-5 h-5" />
-            ) : (
-              <Sun className="w-5 h-5" />
-            )}
+            {theme == "dark"? <Moon/> : <Sun/>}
+            
           </Button>
           <Button onClick={() => setMenu(!menu)} variant={"ghost"} className="lg:hidden p-2">
             {menu === true ? <X /> : <Menu />}
