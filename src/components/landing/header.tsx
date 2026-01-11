@@ -2,13 +2,12 @@
 import { redirect } from "next/navigation";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import Link from "next/link";
-import Transition from "./transition.module.css";
-import Image from "next/image";
 import { Button } from "../ui/button";
 import { FaDiscord } from "react-icons/fa6";
 import { useState, useEffect } from "react";
 import { Menu, X, Sun, Moon } from "lucide-react";
 import { useTheme } from "next-themes";
+import { Sidebar, SidebarContent } from "../ui/sidebar";
 
 export default function Header() {
   const [menu, setMenu] = useState(false);
@@ -69,15 +68,17 @@ export default function Header() {
           <Button suppressHydrationWarning
             variant={"ghost"}
             onClick={Toggle}
+            className="flex"
           >
-            {theme == "dark"? <Moon/> : <Sun/>}
+            {theme == "dark"? <Moon size={48}/> : <Sun size={48}/>}
             
           </Button>
-          <Button onClick={() => setMenu(!menu)} variant={"ghost"} className="lg:hidden p-2">
-            {menu === true ? <X /> : <Menu />}
+          <Button onClick={() => setMenu(!menu)} variant={"ghost"} className="lg:hidden flex p-2">
+            {menu === true ? <X size={100} /> : <Menu size={100} />}
           </Button>
         </div>
       </header>
+    
     </>
   );
 }
